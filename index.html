@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Stockr</h1>
+					<br>
+					<h3>An stock market app for exploring hunches and whimsy</h2>
+					<br>
+					<br>
+					<br>
+					<h3>Katie Broida<br>
+					DGMD<br>
+					5/12/16</h3>
+				</section>
+				<section>What is Stockr?</section>
+				<section>
+					<section>Why explore the stock market?</section>
+					<section>Stock market has felt like it's played a consistent role in my early adulthood</section>
+					<section>
+						Subprime crisis in my hometown
+						<img src="http://media.cleveland.com/metro/photo/c00vacantdjpg-65bae62dcc01b010.jpg">
+						<a href="http://www.salon.com/2013/05/12/cleveland_ground_zero_for_the_housing_bubble/">Cleveland: Ground zero for the housing bubble</a>
+					</section>
+					<section>Market crash of '08 is severe enough to hurt job prospects after graduation in 2010</section>
+					<section>A lot of market predictions feel like they've been pulled from a crystal ball, so why not make my own?</section>
+					<section><a href="http://104.236.243.250:8080/?#/stock/quote">Demo</a></section>
+				</section>
+				<section>
+					<section>Developing as a programmer</section>
+					<section>Solidified my understanding of some fundamental JavaScript concepts</section>
+					<section>Increased my confidence in creating highly personal apps and tackling D3 and Angular's complexity complex apps</section>
+				</section>
+				<section>
+					<section>My programming skillz and the bigger picture</section>
+					<section>Got excited about using programming to interact with entities larger than myself</section>
+					<section>Made a lot of progress on my app, but realized my programming powers are still limited to the information that is made freely available online</section>
+					<section>Still excited about possible data projects I can do, but realize I may have to learn more about obtaining and cleaning more of my own data</section>
+				</section>
+				<section><h3>Remaining to-dos for the app:</h3>
+					<section>Fix the bugs (page doesn't update with new chart information, form refreshes, date picker across browsers, etc</section>
+					<section>Get it launched at an actual URL and not http://104.236.243.250:8080/</section>
+					<section>Better error handling, labeling and provide auto-complete suggestions for stock symbols</section>
+					<section>Add Twitter library by scraping their historical tweets search results</section>
+					<section>Expand app functionality to allow users to go deeper into a certain medium/source (images, more info from existing APIs), add other APIs (news, weather)</section>
+					<section>Make my angular set up more modular so I can use the same code to draw multiple charts or display multiple slideshows</section>
+				</section>
+				<section>
+				<h3>Questions?</h3>
+				<br>
+				<br>
+				You can also find the source code at <br>
+				<a href="https://github.com/ktbee/stockr">https://github.com/ktbee/stockr</a>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
